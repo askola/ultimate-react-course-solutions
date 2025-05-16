@@ -47,8 +47,8 @@ const tempWatchedData = [
 
 const average = (arr) => arr.reduce((acc, cur, i, arr) => acc + cur / arr.length, 0);
 
-const KEY = "";
-const query = "inception";
+const KEY = process.env.REACT_APP_OMDB_API_KEY;
+const query = "interstellar";
 
 export default function App() {
   const [movies, setMovies] = useState([]);
